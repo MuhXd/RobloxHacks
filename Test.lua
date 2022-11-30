@@ -1,8 +1,8 @@
-
+-- Loads the Game 
 local GamesLoader = {
     [{6839171747}] = "",
 }
-
+-- Loops and Returns True if Works
 for ids, url in next, GamesLoader do
     if table.find(ids, game.PlaceId) then
         loadstring(game:HttpGet(url))(); 
@@ -10,5 +10,5 @@ for ids, url in next, GamesLoader do
     end
 end
 
-
+-- Returns false if it Doesn't Works
 return false
