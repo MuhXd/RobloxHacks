@@ -1,3 +1,4 @@
+print("Loaded")
 local GamesLoader = {
     [{6839171747}] = "",
 }
