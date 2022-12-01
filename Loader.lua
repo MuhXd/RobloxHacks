@@ -5,9 +5,8 @@ local GamesLoader = {
 }
 -- Loops and Returns True if Works
 for ids, url in next, GamesLoader do
-    print("Finding")
     if table.find(ids, game.PlaceId) then
-        print("found")
+        print("found Game Id"..game.PlaceId )
         loadstring(game:HttpGet(url))(); 
         return true
     end
